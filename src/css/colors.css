@@ -1,0 +1,19 @@
+:root{
+    --pagina-background-color: #383838;
+
+    --botao-background-color: #FFFBF5;
+    --botao-icons-color: #000;
+
+    --carta-background-color: #444;
+
+    --carta-cabecalho-background-color: rgba(255, 255, 255, .5);
+    --carta-cabecalho-classe-background-color: #333;
+    --carta-cabecalho-nomeDoAgente-color: #FFFBF5;
+    --carta-cabecalho-statusDoAgente-background-color: rgba(0, 0, 0, .7);
+    --carta-cabecalho-statusDoAgente-color: #FFFBF5;
+
+    --carta-informacoes-background-color: rgba(255, 255, 255, .5);
+    --carta-informacoes-titulo-background-color: rgba(0, 0, 0, .9);
+    --carta-informacoes-titulo-color: #FFFBF5;
+    --carta-informacoes-texto-color: #111;
+}

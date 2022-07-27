@@ -1,0 +1,168 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--pagina-background-color);
+}
+
+body::before{
+    content: '';
+    background-image: url("../img/bg/bg-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    filter: blur(5px);
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.botao-carta{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--botao-background-color);
+    transition: .2s;
+}
+
+.botao-carta ion-icon{
+    color: var(--botao-icon-color);
+    font-size: 40px;
+}
+
+.botao-carta:hover{
+    transform: scale(1.2);
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 15px;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    background: var(--carta-background-color);
+}
+
+.carta .carta-cabecalho{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 0 15px 0 15px;
+    background: var(--carta-cabecalho-background-color);
+    font-family: 'tungsten', sans-serif;
+}
+
+.carta .carta-cabecalho .classe-agente{
+    position: relative;
+    top: -30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--carta-cabecalho-classe-background-color);
+}
+
+.carta .carta-cabecalho .classe-agente img{
+    width: 45px;
+}
+
+.carta .carta-cabecalho .nome-agente{
+    position: relative;
+    right: 25px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: var(--carta-cabecalho-nomeDoAgente-color);
+}
+
+.carta .carta-cabecalho .status-agente{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    background: var(--carta-cabecalho-statusDoAgente-background-color);
+    color: var(--carta-cabecalho-statusDoAgente-color);
+}
+
+.carta .carta-cabecalho .status-agente .container ion-icon{
+    position: relative;
+    font-size: 32px;
+    top: 4px;
+    right: -5px;
+    color: var(--carta-cabecalho-statusDoAgente-color);
+}
+
+.carta .carta-cabecalho .status-agente .container .escudo-agente{
+    position: relative;
+    right: 19px;
+    top: -7px;
+}
+
+.carta .carta-cabecalho .status-agente .container .vida-agente{
+    position: relative;
+    right: 10px;
+    font-size: 32px;
+}
+
+.carta .carta-imagem{
+    position: absolute;
+    top: 25%;
+    height: 500px;
+}
+
+.carta .carta-informacoes{
+    position: relative;
+    top: 350px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: var(--carta-informacoes-background-color);
+}
+
+.carta .carta-informacoes .titulo-informacoes{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    color: var(--carta-informacoes-titulo-color);
+    border-radius: 14px 14px 0 0;
+    background: var(--carta-informacoes-titulo-background-color);
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'tungsten', sans-serif;
+}
+
+.carta .carta-informacoes .texto-informacoes{
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'din-next', sans-serif;
+    color: var(--carta-informacoes-texto-color);
+}

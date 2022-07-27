@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="author" content="JhonyRovetta">
+    <title>Valorant Cards</title>
+    <link rel="stylesheet" href="src/css/normalizer.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/colors.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <section class="main-container">
+        <span class="botao-carta" onclick="voltar_carta()"><ion-icon name="arrow-back-outline"></ion-icon></span>
+        <div class="carta">
+            <div class="carta-cabecalho">
+                <span class="classe-agente"><img id="classe" src="src/img/classes/Controlador.png" alt=""></span>
+                <span class="nome-agente" id="nome">Brimstone</span>
+                <div class="status-agente">
+                    <div class="container">
+                        <ion-icon name="shield-outline"></ion-icon>
+                        <span class="escudo-agente">50</span>
+                        <span class="vida-agente">100</span>
+                    </div>
+                </div>
+            </div>
+            <img class="carta-imagem" id="imagem" src="src/img/agentes/Brimstone.png" alt="">
+            <div class="carta-informacoes">
+                <span class="titulo-informacoes">Informações:</span>
+                <p class="texto-informacoes" id="informacoes">Vindo diretamente dos EUA, o arsenal orbital de Brimstone garante que o esquadrão dele esteja sempre em vantagem. Sua capacidade de oferecer utilidade com precisão a distância faz dele um comandante inigualável na linha de frente.</p>
+            </div>
+        </div>
+        <span class="botao-carta" onclick="passar_carta()"><ion-icon name="arrow-forward-outline"></ion-icon></span>
+    </section>
+    <script type="text/javascript" src="src/js/dynamic.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

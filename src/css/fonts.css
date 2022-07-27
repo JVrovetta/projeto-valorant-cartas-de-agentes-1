@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'tungsten';
+    src: url(../font/Tungsten-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'din-next';
+    src: url(../font/DINNextW1G-Medium.otf);
+}
